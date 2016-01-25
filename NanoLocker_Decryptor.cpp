@@ -82,16 +82,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	_tprintf(TEXT("Using:\n\tSource:\t\t%s\n\tDestination:\t%s\n\tIni:\t\t%s\n\n"), pszSource, pszDestination, pszInifile);
 
 	
-	//---------------------------------------------------------------
-	// Call EncryptFile to do the actual encryption.
-	if (DecryptFile(pszSource, pszDestination, pszInifile))
-	{
-		
-	}
-	else
-	{
+
+	DecryptFile(pszSource, pszDestination, pszInifile);
 	
-	}
+
 
 	return 0;
 }
